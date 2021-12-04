@@ -1,0 +1,278 @@
+{% extends 'base/base.html' %}
+{% block content %}
+<div class="content-wrapper">
+    <div class="page-header">
+        <h3 class="page-title"> Identification and Profiling </h3>
+
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    
+                    <form class="form-sample" action="" method="POST">
+                        {% csrf_token %}
+                        <p class="card-description"> ENHANCED DUE DILIGENCE FORM(EDD) </p>
+                        <!--<div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group row">
+                                    <label class="col-sm-5 col-form-label">Account Opening Date </label>
+                                    <input type="date" id=" " name="accountdate">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group row">
+                                    <label class="col-sm-5 col-form-label"> Branch Name</label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" name="branchname" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group row">
+                                    <label class="col-sm-5 col-form-label"> Branch Code</label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" name="branchcode" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>-->
+                        <!--<div class="row">
+                         
+                            <div class="col-md-6">
+                                <div class="form-group row">
+                                    <label class="col-sm-5 col-form-label"> Account Number</label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" name="accountnumber" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group row">
+                                    <label class="col-sm-5 col-form-label"> CIF Number </label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" name="cifnumber" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group row">
+                                    <label class="col-sm-5 col-form-label"> Title of Account </label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" name="accounttitle" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label">CNIC / Registration Number</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" name="cnic" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group row">
+                                    <label class="col-sm-5 col-form-label">Purpose of Account </label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" name="accountpurpose" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>-->
+                        <!--<div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group row">
+                                    <label class="col-sm-5 col-form-label">Customer Type</label>
+                                    <div class="col-sm-7">
+                                        <select id="purpose_of_account" name="customertype">
+                                            <option>select</option>
+                                            <option value="House Wife"> House Wife</option>
+                                            <option value="PEP Exchange Company"> PEP Exchange Company </option>
+                                            <option value="Club"> Club</option>
+                                            <option value="Society "> Society </option>
+                                            <option value="A NGO / NPO / Charities"> A NGO / NPO / Charities </option>
+                                            <option value="Arms/ Ammunition Dealers">Arms/ Ammunition Dealers</option>
+                                            <option value="Trust"> Trust </option>
+                                            <option value="Association Landlord"> Association Landlord</option>
+                                            <option value="Broker"> Broker </option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>-->
+                        <!--<div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label">Monthly Expected Credit Turnover</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" name="monthlycredit" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group row">
+                                    <label class="col-sm-5 col-form-label">Monthly Expected Debit Turnover </label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" name="monthlydebit" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>-->
+                        <div class="row">
+                            <!--<div class="col-md-6">
+                                <div class="form-group row">
+                                    <label class="col-sm-5 col-form-label"> Annual Net Income Turnover</label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" name="netincome" />
+                                    </div>
+                                </div>
+                            </div>-->
+                            <!--<div class="col-md-6">
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label">Source of Wealth/Funds</label>
+                                    <div class="col-sm-8">
+                                        <input type="text" class="form-control" name="wealthsource" />
+                                    </div>
+                                </div>
+                            </div>-->
+                            <div class="col-md-6">
+                                <div class="form-group row">
+                                    <label class="col-sm-4 col-form-label">Is the Source of Wealth Verified?</label>
+                                    <!--<div class="col-sm-8">
+                    <input type="text" class="form-control" name="wealthsource" />
+                </div>-->
+                                    <!--<div class="form-group row">-->
+
+                                    <div class="col-sm-4">
+                                        <input class="form-check-input" type="radio" name="branchvist" value="yes">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            Yes
+                                        </label>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <input class="form-check-input" type="radio" name="branchvist" value="no">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            No
+                                        </label>
+                                    </div>
+                                    <!--</div>-->
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group row">
+                                    <label class="col-sm-6 col-form-label"> Upload the document </label>
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control" name="wiretrasnfer" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-12">
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label">Is the Senior Management Approval taken?</label>
+                                <!--<div class="col-sm-8">
+                <input type="text" class="form-control" name="wealthsource" />
+            </div>-->
+                                <!--<div class="form-group row">-->
+
+                                <div class="col-sm-4">
+                                    <input class="form-check-input" type="radio" name="branchvist" value="yes">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Yes
+                                    </label>
+                                </div>
+                                <div class="col-sm-4">
+                                    <input class="form-check-input" type="radio" name="branchvist" value="no">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        No
+                                    </label>
+                                </div>
+                                <!--</div>-->
+
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group row">
+                                    <label class="col-sm-6 col-form-label">Expected wire transfers to /from country of Origin or the country of destination (Name of country ) , If Any</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control" name="wiretrasnfer" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-description"> In case of High Risk Business Entity,Personal Visit to entity premises by Branch official. </p>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group row">
+
+                                        <div class="col-sm-4">
+                                            <input class="form-check-input" type="radio" name="branchvist" value="yes">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                Yes
+                                            </label>
+                                        </div>
+                                        <div class="col-sm-5">
+                                            <input class="form-check-input" type="radio" name="branchvist" value="no">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                No
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <div class="form-group row">
+                                            <label class="col-sm-5 col-form-label"> lf Yes Please Specify</label>
+                                            <div class="col-sm-7">
+                                                <input type="text" class="form-control" name="specify" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <p class="card-description"> Expected Monthly Turnover</p>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group row">
+                                    <label class="col-sm-6 col-form-label"> Branch Comments (RecommendationƒRemarks For performing EDD in terms of Satisfaction.</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control" name="branchcomment" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <button type="submit" class="btn btn-gradient-primary mr-2">Submit</button>
+                                <button class="btn btn-gradient-success">Cancel</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

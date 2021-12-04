@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include 'base/header.html' %}
+    
+
+<body>
+
+
+    <div class="container-scroller">
+       {% include 'base/navbar.html' %}
+         <div class="container-fluid page-body-wrapper">
+
+           {% include 'base/sidebar.html' %}
+
+             <div class="main-panel">
+                 {% include 'base/message.html' %}
+                 {% block content %}
+                 {% endblock %}
+
+
+             </div>
+
+         </div>
+
+    </div>
+
+
+</body>
+
+
+</html>

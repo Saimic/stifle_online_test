@@ -1,0 +1,16 @@
+{% if messages %}
+    {% for message in messages %}
+
+
+<div class="alert alert-success alert-dismissible">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+
+    {{ message }}
+    Do you want to screen this customer ?
+    <a href="{% url 'reportingModule' %}" class="alert-link">Yes </a>
+</div>
+
+
+
+    {% endfor %}
+{% endif %} 

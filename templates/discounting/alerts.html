@@ -1,0 +1,91 @@
+{% extends 'base/base.html' %}
+{% block content %}
+<div class="content-wrapper">
+    <div class="row">
+        <div class="col-lg-12 grid-margin stretch-card">
+            <div class="card" style="height:480px;">
+                <div class="card-body" style="overflow:auto; padding:2px;">
+
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+
+                                <th>DATAID </th>
+                                <th>Name Score</th>
+                                <th>Name</th>
+                                <th>Alias</th>
+                                <th>ID NNumber</th>
+                                <th>ID Number Match Score</th>
+                                <th>Father Name</th>
+                                <th>Father Name Match Score</th>
+                                <th>province</th>
+                                <th>province Match Score</th>
+                                <th>District</th>
+                                <th>District Match Score</th>
+                                <th>Date Of Birth</th>
+                                <th>Date Of Birth Match Score</th>
+                                <th>POB</th>
+                                <th>POB Match Score</th>
+                                <th>city</th>
+                                <th>city Match Score</th>
+                                <th>country</th>
+                                <th>country Match Score</th>
+                                <th>Nationality</th>
+                                <th>Address</th>
+                                <th>Address Match Score</th>
+                                <th>Discounting Raionale</th>
+                                <th>Proposed Action</th>
+                                <th>Match Type</th>
+                                <th>Risk</th>
+                                <th>LIST</th>
+                                <th>Type</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for discount in discounts %}
+                            <tr>
+                                <td>{{discount.dataid}}</td>
+                                <td>{{discount.name_score}}</td>
+                                <td>{{discount.name}}</td>
+                                <td>{{discount.alias}}</td>
+                                <td>{{discount.id_number}}</td>
+                                <td>{{discount.id_number_match_score}}</td>
+                                <td>{{discount.father_name}}</td>
+                                <td>{{discount.father_name_score}}</td>
+                                <td>{{discount.province}}</td>
+                                <td>{{discount.province_match_score}}</td>
+                                <td>{{discount.district}}</td>
+                                <td>{{discount.district_match_score}}</td>
+                                <td>{{discount.dob}}</td>
+                                <td>{{discount.dob_match_score}}</td>
+                                <td>{{discount.pob}}</td>
+                                <td>{{discount.pob_match_score}}</td>
+                                <td>{{discount.country}}</td>
+                                <td>{{discount.country_match_score}}</td>
+                                <td>{{discount.nationality}}</td>
+                                <td>{{discount.nationality_match_score}}</td>
+                                <td>{{discount.address}}</td>
+                                <td>{{discount.address_match_score}}</td>
+                                <td>{{discount.discounting_rationale}}</td>
+                                <td>{{discount.type_discounting_factor}}</td>
+                                <td>{{discount.proposed_action}}</td>
+                                <td>{{discount.match_type}}</td>
+                                <td>{{discount.risk}}</td>
+                                <td>{{discount.list}}</td>
+                                <td>{{discount.type}}</td>
+                            </tr>                         
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+{% endblock %}

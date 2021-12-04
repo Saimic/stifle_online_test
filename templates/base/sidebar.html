@@ -1,0 +1,124 @@
+
+
+<nav class="sidebar sidebar-offcanvas" id="sidebar">
+    <ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'index' %}">
+                <span class="menu-title">Dashboard</span>
+                <!--   <i class="mdi mdi-home menu-icon">  </i> > -->
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#identification" aria-expanded="false" aria-controls="ui-basic">
+                <span class="menu-title">Identification & Profiling</span> <i class="menu-arrow"></i>
+                <!-- <i class="mdi mdi-crosshairs-gps menu-icon"></i> -->
+            </a>
+            <div class="collapse" id="identification">
+                <ul class="nav flex-column sub-menu">
+                    <li class="nav-item"> <a class="nav-link" href="{% url 'addIndividual' %}">Individual</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="{% url 'addOrganization' %}">Organization</a></li>
+                    <!--<li class="nav-item"> <a class="nav-link" href="{% url 'pepIdentification' %}">PEP Identification </a></li>-->
+
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#screeing" aria-expanded="false" aria-controls="ui-basic">
+                <span class="menu-title">Screening</span> <i class="menu-arrow"></i>
+                <!-- <i class="mdi mdi-crosshairs-gps menu-icon"></i> -->
+            </a>
+            <div class="collapse" id="screeing">
+                <ul class="nav flex-column sub-menu">
+                    <li class="nav-item"> <a class="nav-link" href="{% url 'individualScreeing' %}">Individual</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="{% url 'organizationScreeing' %}">Organization</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="{% url 'portScreeing' %}">Port</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="{% url 'vesselScreeing' %}">Vessel</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="{% url 'bulkScreeing' %}">Bulk Screeing</a></li>
+                </ul>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="">
+                <span class="menu-title">Alerts Generation, Handling <br /> & Discounting  </span>
+                <!--   <i class="mdi mdi-home menu-icon">  </i> > -->
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#riskrating" aria-expanded="false" aria-controls="ui-basic">
+                <span class="menu-title"> Acceptance & Risk Rating</span> <i class="menu-arrow"></i>
+                <!-- <i class="mdi mdi-crosshairs-gps menu-icon"></i> -->
+            </a>
+            <div class="collapse" id="riskrating">
+                <ul class="nav flex-column sub-menu">
+                    <li class="nav-item"> <a class="nav-link" href="{% url 'riskrating' %}">Risk rating</a></li>
+
+                    <li class="nav-item"> <a class="nav-link" href="{% url 'eddModule' %}">Enhanced Due Diligence</a></li>
+                </ul>
+            </div>
+        </li>
+        <!--<li class="nav-item">
+    <a class="nav-link" href="{% url 'riskrating' %}">
+        <span class="menu-title">
+            Acceptance & Risk Rating-->
+        <!-- <i class="mdi mdi-table-large menu-icon"></i> -->
+        <!--</a>
+    </li>-->
+
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#monitoring" aria-expanded="false" aria-controls="ui-basic">
+                <span class="menu-title">
+                    Monitoring, Investigation and
+                    <br>  Reporting
+                </span> <i class="menu-arrow"></i>
+                <!-- <i class="mdi mdi-crosshairs-gps menu-icon"></i> -->
+            </a>
+            <div class="collapse" id="monitoring">
+                <ul class="nav flex-column sub-menu">
+
+                    <li class="nav-item"> <a class="nav-link" href="{% url 'monitoringModule' %}">Monitoring</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="{% url 'strModule' %}">STR</a></li>
+
+                </ul>
+            </div>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'reportingModule' %}">
+                <span class="menu-title">
+
+                    Reports
+                </span>
+                <!-- <i class="mdi mdi-table-large menu-icon"></i> -->
+            </a>
+        </li>
+
+
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#admin" aria-expanded="false" aria-controls="admin">
+                <span class="menu-title">
+                    Admin
+                </span> <i class="menu-arrow"></i>
+                <!-- <i class="mdi mdi-crosshairs-gps menu-icon"></i> -->
+            </a>
+            <div class="collapse" id="admin">
+                <ul class="nav flex-column sub-menu">
+                  
+                    <li class="nav-item"> <a class="nav-link" href=""> User Management </a></li>
+                    <li class="nav-item"> <a class="nav-link" href="">Audit Trail</a></li>
+                    <li class="nav-item"> <a class="nav-link" href=""> Roles Management </a></li>
+                    <li class="nav-item"> <a class="nav-link" href="">Threshold Setting</a></li>
+                </ul>
+            </div>
+        </li>
+        <!--<li class="nav-item">
+        <a class="nav-link" href="{% url 'login' %}">
+            <span class="menu-title">Log Out</span>
+
+        </a>
+    </li>-->
+    </ul>
+</nav>
+
+
+
+

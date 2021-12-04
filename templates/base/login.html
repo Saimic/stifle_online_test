@@ -1,0 +1,32 @@
+{% extends 'base/base.html' %}
+{% block content %}
+<section class="signup ">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-m-6 mx-auto">
+                <div class="signup-content">
+                    <form method="POST" id="signin-form" class="signin-form">
+                        <h2 class="form-title">Welcome to MyStifle </h2>
+                        <h5 <p class="form-title">  Insert your username and pasword to access to your secure MyStifle account </p></h5>
+
+                        <div class="form-group">
+                            <input type="email" class="form-input" name="email" id="email" placeholder="Your Email" />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-input" name="password" id="password" placeholder="Password" /> <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="submit" name="submit" id="submit" class="form-submit" value="Sign in" />
+                        </div>
+                    </form>
+                    <p class="loginhere"> Forgotten your passoword ? <a href="#" class="loginhere-link">###</a> </p>
+                    <p class="loginhere"> Contct Suport <a href="#" class="loginhere-link">###</a> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
